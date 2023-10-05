@@ -1,0 +1,49 @@
+@import "src/constants";
+@import "src/helpers";
+
+.input {
+  display: flex;
+  width: pxToRem(200);
+  padding: pxToRem(6) pxToRem(8);
+  align-items: center;
+  gap: pxToRem(10);
+
+  border-radius: 4px;
+  border: 1px solid $color-black30;
+
+  @include text_caption;
+  color: $color-black90;
+
+  &::placeholder {
+    color: $color-black50;
+  }
+
+  &:hover {
+    border: 1px solid $color-black50;
+  }
+
+  &:focus {
+    border: 1.5px solid $color-black90;
+  }
+
+  textarea {
+    height: pxToRem(44);
+  }
+}
+
+.textField {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: pxToRem(4);
+
+  label {
+    display: flex;
+    padding: 0 pxToRem(4);
+    align-items: flex-start;
+    align-self: stretch;
+
+    @include text_label;
+    color: $color-black90;
+  }
+}

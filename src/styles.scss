@@ -1,0 +1,41 @@
+@import "src/helpers";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  @include font-raleway;
+  font-style: normal;
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+  overflow-y: hidden;
+
+  body {
+    height: 100%;
+  }
+}
+
+input,
+textarea {
+  border: none;
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+button {
+  border: none;
+  margin: 0;
+  background: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
