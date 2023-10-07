@@ -1,0 +1,17 @@
+@import "src/constants";
+@import "src/helpers";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: pxToRem(8);
+  color: $color-black90;
+
+  span:first-child {
+    @include text_label;
+  }
+
+  span:last-child {
+    @include text_caption;
+  }
+}

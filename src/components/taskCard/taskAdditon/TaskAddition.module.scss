@@ -1,0 +1,11 @@
+@import "src/constants";
+@import "src/helpers";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: pxToRem(2);
+
+  @include text_small_caption;
+  color: $color-black50;
+}

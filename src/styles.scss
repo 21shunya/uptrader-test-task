@@ -1,4 +1,5 @@
 @import "src/helpers";
+@import "src/constants";
 
 * {
   box-sizing: border-box;
@@ -11,6 +12,7 @@
 html {
   height: 100%;
   overflow-y: hidden;
+  background: $color-black10;
 
   body {
     height: 100%;

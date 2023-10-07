@@ -1,0 +1,7 @@
+@import "src/helpers";
+
+.h {
+  @include font_mulish;
+  font-size: pxToRem(14);
+  font-weight: 700;
+}
