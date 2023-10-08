@@ -1,10 +1,11 @@
-import { PriorityEnum, Task } from '../types/task';
+import { PriorityEnum, StatusEnum, Task } from '../types/task';
 
 export const taskList: Task[] = [
     {
         id: 1,
         title: 'Title 1',
         priority: PriorityEnum.HIGH,
+        status: StatusEnum.QUEUE,
         dateStart: '12.12.2023',
         dateEnd: '',
         inWork: '1 week',
@@ -17,6 +18,7 @@ export const taskList: Task[] = [
         id: 2,
         title: 'Title 2',
         priority: PriorityEnum.LOW,
+        status: StatusEnum.QUEUE,
         dateStart: '11.12.2023',
         dateEnd: '',
         inWork: '2 week',

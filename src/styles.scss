@@ -19,6 +19,12 @@ html {
   }
 }
 
+.App {
+  display: flex;
+  justify-content: center;
+  padding: pxToRem(60);
+}
+
 input,
 textarea {
   border: none;

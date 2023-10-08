@@ -1,0 +1,16 @@
+@import "src/constants";
+@import "src/helpers";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: pxToRem(1200);
+  gap: pxToRem(32);
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+}

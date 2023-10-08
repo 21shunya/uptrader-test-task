@@ -1,0 +1,40 @@
+@import "src/constants";
+@import "src/helpers";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: pxToRem(16);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: pxToRem(8);
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: pxToRem(4);
+
+    @include text_small_caption;
+    color: $color-black50;
+
+    svg {
+      transition: all 0.3s ease-in-out;
+      stroke: $color-black50;
+    }
+
+    &:hover {
+      color: $color-black90;
+
+      svg {
+        scale: 1.2;
+        stroke: $color-black90;
+      }
+    }
+  }
+}
+

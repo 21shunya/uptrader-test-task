@@ -6,12 +6,20 @@
   padding: pxToRem(12);
   flex-direction: column;
   align-items: flex-start;
+  width: pxToRem(200);
   gap: pxToRem(8);
 
   border-radius: 4px;
   background: $color-white;
   color: $color-black90;
   @include text_caption;
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    scale: 1.03;
+  }
 }
 
 .header {
