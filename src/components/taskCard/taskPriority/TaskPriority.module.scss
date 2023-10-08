@@ -1,0 +1,29 @@
+@import "src/constants";
+@import "src/helpers";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: pxToRem(4);
+  align-self: stretch;
+
+  @include text_caption;
+}
+
+.ellipse {
+  width: pxToRem(10);
+  height: pxToRem(10);
+  border-radius: 50%;
+}
+
+.high {
+  background: red;
+}
+
+.medium {
+  background: yellowgreen;
+}
+
+.low {
+  background: lightskyblue;
+}

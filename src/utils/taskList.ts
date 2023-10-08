@@ -1,6 +1,6 @@
 import { PriorityEnum, Task } from '../types/task';
 
-const taskList: Task[] = [
+export const taskList: Task[] = [
     {
         id: 1,
         title: 'Title 1',
